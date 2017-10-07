@@ -38,7 +38,7 @@ echo "arm64 iDevice Detected!"
 echo "Dumping ECID#"
 cd /System/Library/Caches
 openssl asn1parse -inform DER -in apticket.der | grep -A1 ECID | tail -n +1
-cd /var/mobile
+cd -
 echo "Thanks! Have A Great Day!"
 else
 echo "INVALID!"
